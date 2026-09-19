@@ -83,7 +83,15 @@ namespace SmartDesktopApp
             this.lblMainTitle.Text = Core.LanguageManager.GetString("SYS_TITLE");
             this.lblSubtitle.Text = Core.LanguageManager.GetString("SYS_SUBTITLE");
             this.btnHome.Text = Core.LanguageManager.GetString("BTN_HOME");
-            this.btnModule1.Text = Core.LanguageManager.GetString("BTN_GROUP1");
+            this.btnModule2.Text = Core.LanguageManager.GetString("BTN_GROUP2");
+            this.btnModule3.Text = Core.LanguageManager.GetString("BTN_GROUP3");
+            this.btnModule4.Text = Core.LanguageManager.GetString("BTN_GROUP4");
+            this.btnModule5.Text = Core.LanguageManager.GetString("BTN_GROUP5");
+            this.btnModule6.Text = Core.LanguageManager.GetString("BTN_GROUP6");
+            this.btnModule7.Text = Core.LanguageManager.GetString("BTN_GROUP7");
+            this.btnModule8.Text = Core.LanguageManager.GetString("BTN_GROUP8");
+            this.btnModule9.Text = Core.LanguageManager.GetString("BTN_GROUP9");
+            this.btnModule10.Text = Core.LanguageManager.GetString("BTN_GROUP10");
             this.lblStatus.Text = Core.LanguageManager.GetString("LBL_STATUS_READY");
         }
         
@@ -124,6 +132,11 @@ namespace SmartDesktopApp
             {
                 cboLanguages.SelectedIndex = selectedIndex;
             }
+        }
+
+        private void btnModule2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

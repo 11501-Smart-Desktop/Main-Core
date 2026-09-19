@@ -259,6 +259,7 @@
             this.btnModule2.TabIndex = 1;
             this.btnModule2.Text = "第2組：XXX";
             this.btnModule2.UseVisualStyleBackColor = true;
+            this.btnModule2.Click += new System.EventHandler(this.btnModule2_Click);
             // 
             // mainContentPanel
             // 
