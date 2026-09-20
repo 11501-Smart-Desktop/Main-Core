@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace SmartDesktopApp
 {
@@ -137,6 +138,15 @@ namespace SmartDesktopApp
         private void btnModule2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // 取得當前組件的版本資訊
+            Version version = Assembly.GetExecutingAssembly().GetName().Version;
+            string shortVersion = $"{version.Major}.{version.Minor}.{version.Build}";
+            // 或者，如果您有設計一個 label 用來顯示版本：
+            lblSubtitle.Text= $"大灣高中 × 沙崙高中 聯名專案 v{shortVersion}" ;
         }
     }
 }

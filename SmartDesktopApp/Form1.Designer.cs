@@ -37,6 +37,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.lblStatus = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnModule10 = new System.Windows.Forms.Button();
+            this.btnModule9 = new System.Windows.Forms.Button();
             this.btnHome = new System.Windows.Forms.Button();
             this.btnModule8 = new System.Windows.Forms.Button();
             this.btnModule7 = new System.Windows.Forms.Button();
@@ -46,8 +48,6 @@
             this.btnModule3 = new System.Windows.Forms.Button();
             this.btnModule2 = new System.Windows.Forms.Button();
             this.mainContentPanel = new System.Windows.Forms.Panel();
-            this.btnModule9 = new System.Windows.Forms.Button();
-            this.btnModule10 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -92,11 +92,10 @@
             this.lblSubtitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblSubtitle.Font = new System.Drawing.Font("微軟正黑體", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.lblSubtitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblSubtitle.Location = new System.Drawing.Point(779, 13);
+            this.lblSubtitle.Location = new System.Drawing.Point(589, 13);
             this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(300, 22);
+            this.lblSubtitle.Size = new System.Drawing.Size(490, 22);
             this.lblSubtitle.TabIndex = 1;
-            this.lblSubtitle.Text = "大灣高中 × 沙崙高中 聯名專案";
             this.lblSubtitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lblMainTitle
@@ -162,6 +161,30 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 573);
             this.panel3.TabIndex = 2;
+            // 
+            // btnModule10
+            // 
+            this.btnModule10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModule10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModule10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModule10.Location = new System.Drawing.Point(0, 400);
+            this.btnModule10.Name = "btnModule10";
+            this.btnModule10.Size = new System.Drawing.Size(200, 50);
+            this.btnModule10.TabIndex = 10;
+            this.btnModule10.Text = "第10組：XXX";
+            this.btnModule10.UseVisualStyleBackColor = true;
+            // 
+            // btnModule9
+            // 
+            this.btnModule9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModule9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModule9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModule9.Location = new System.Drawing.Point(0, 350);
+            this.btnModule9.Name = "btnModule9";
+            this.btnModule9.Size = new System.Drawing.Size(200, 50);
+            this.btnModule9.TabIndex = 9;
+            this.btnModule9.Text = "第9組：XXX";
+            this.btnModule9.UseVisualStyleBackColor = true;
             // 
             // btnHome
             // 
@@ -269,30 +292,6 @@
             this.mainContentPanel.Size = new System.Drawing.Size(891, 573);
             this.mainContentPanel.TabIndex = 3;
             // 
-            // btnModule9
-            // 
-            this.btnModule9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnModule9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModule9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule9.Location = new System.Drawing.Point(0, 350);
-            this.btnModule9.Name = "btnModule9";
-            this.btnModule9.Size = new System.Drawing.Size(200, 50);
-            this.btnModule9.TabIndex = 9;
-            this.btnModule9.Text = "第9組：XXX";
-            this.btnModule9.UseVisualStyleBackColor = true;
-            // 
-            // btnModule10
-            // 
-            this.btnModule10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnModule10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModule10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule10.Location = new System.Drawing.Point(0, 400);
-            this.btnModule10.Name = "btnModule10";
-            this.btnModule10.Size = new System.Drawing.Size(200, 50);
-            this.btnModule10.TabIndex = 10;
-            this.btnModule10.Text = "第10組：XXX";
-            this.btnModule10.UseVisualStyleBackColor = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -305,6 +304,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SmartDesktop";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
