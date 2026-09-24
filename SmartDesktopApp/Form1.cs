@@ -45,8 +45,6 @@ namespace SmartDesktopApp
             // 5. 填充 ComboBox 並將選單指到目前載入的語系
             FillLanguageComboBox(finalLang);
 
-            ShowModule(new UC_Home());
-
             // 讓程式一打開，右邊就顯示首頁模組
             ShowModule(new UC_Home());
             lblStatus.Text = "● 系統就緒 | 請選擇功能模組";
@@ -80,10 +78,14 @@ namespace SmartDesktopApp
         }
         private void RefreshUI()
         {
-            // 這裡就是「解耦」：不再直接打字，而是去查字典
+            // 1. 視窗標題與副標題
+            this.Text = Core.LanguageManager.GetString("SYS_TITLE");
             this.lblMainTitle.Text = Core.LanguageManager.GetString("SYS_TITLE");
             this.lblSubtitle.Text = Core.LanguageManager.GetString("SYS_SUBTITLE");
+
+            // 2. 導覽列按鈕 (首頁 + 第1組教學示範 + 第2至10組學生模組)
             this.btnHome.Text = Core.LanguageManager.GetString("BTN_HOME");
+            this.btnModule1.Text = Core.LanguageManager.GetString("BTN_GROUP1"); // 第1組：教學示範區
             this.btnModule2.Text = Core.LanguageManager.GetString("BTN_GROUP2");
             this.btnModule3.Text = Core.LanguageManager.GetString("BTN_GROUP3");
             this.btnModule4.Text = Core.LanguageManager.GetString("BTN_GROUP4");
@@ -93,6 +95,8 @@ namespace SmartDesktopApp
             this.btnModule8.Text = Core.LanguageManager.GetString("BTN_GROUP8");
             this.btnModule9.Text = Core.LanguageManager.GetString("BTN_GROUP9");
             this.btnModule10.Text = Core.LanguageManager.GetString("BTN_GROUP10");
+
+            // 3. 底部狀態列
             this.lblStatus.Text = Core.LanguageManager.GetString("LBL_STATUS_READY");
         }
         
@@ -147,6 +151,15 @@ namespace SmartDesktopApp
             string shortVersion = $"{version.Major}.{version.Minor}.{version.Build}";
             // 或者，如果您有設計一個 label 用來顯示版本：
             lblSubtitle.Text= $"大灣高中 × 沙崙高中 聯名專案 v{shortVersion}" ;
+        }
+
+        private void btnModule1_Click_1(object sender, EventArgs e)
+        {
+            // 1. 執行切換到老師的教學示範模組
+            ShowModule(new UC_Group1());
+
+            // 2. 同步更新狀態列文字（建議也用多語系 Key）
+            lblStatus.Text = Core.LanguageManager.GetString("LBL_GROUP1_RUNNING");
         }
     }
 }

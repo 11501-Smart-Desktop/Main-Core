@@ -48,6 +48,7 @@
             this.btnModule3 = new System.Windows.Forms.Button();
             this.btnModule2 = new System.Windows.Forms.Button();
             this.mainContentPanel = new System.Windows.Forms.Panel();
+            this.btnModule1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -146,9 +147,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Gray;
+            this.panel3.Controls.Add(this.btnHome);
             this.panel3.Controls.Add(this.btnModule10);
             this.panel3.Controls.Add(this.btnModule9);
-            this.panel3.Controls.Add(this.btnHome);
             this.panel3.Controls.Add(this.btnModule8);
             this.panel3.Controls.Add(this.btnModule7);
             this.panel3.Controls.Add(this.btnModule6);
@@ -156,6 +157,7 @@
             this.panel3.Controls.Add(this.btnModule4);
             this.panel3.Controls.Add(this.btnModule3);
             this.panel3.Controls.Add(this.btnModule2);
+            this.panel3.Controls.Add(this.btnModule1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 70);
             this.panel3.Name = "panel3";
@@ -167,7 +169,7 @@
             this.btnModule10.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule10.Location = new System.Drawing.Point(0, 400);
+            this.btnModule10.Location = new System.Drawing.Point(0, 450);
             this.btnModule10.Name = "btnModule10";
             this.btnModule10.Size = new System.Drawing.Size(200, 50);
             this.btnModule10.TabIndex = 10;
@@ -179,7 +181,7 @@
             this.btnModule9.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule9.Location = new System.Drawing.Point(0, 350);
+            this.btnModule9.Location = new System.Drawing.Point(0, 400);
             this.btnModule9.Name = "btnModule9";
             this.btnModule9.Size = new System.Drawing.Size(200, 50);
             this.btnModule9.TabIndex = 9;
@@ -204,7 +206,7 @@
             this.btnModule8.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule8.Location = new System.Drawing.Point(0, 300);
+            this.btnModule8.Location = new System.Drawing.Point(0, 350);
             this.btnModule8.Name = "btnModule8";
             this.btnModule8.Size = new System.Drawing.Size(200, 50);
             this.btnModule8.TabIndex = 7;
@@ -216,7 +218,7 @@
             this.btnModule7.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule7.Location = new System.Drawing.Point(0, 250);
+            this.btnModule7.Location = new System.Drawing.Point(0, 300);
             this.btnModule7.Name = "btnModule7";
             this.btnModule7.Size = new System.Drawing.Size(200, 50);
             this.btnModule7.TabIndex = 6;
@@ -228,7 +230,7 @@
             this.btnModule6.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule6.Location = new System.Drawing.Point(0, 200);
+            this.btnModule6.Location = new System.Drawing.Point(0, 250);
             this.btnModule6.Name = "btnModule6";
             this.btnModule6.Size = new System.Drawing.Size(200, 50);
             this.btnModule6.TabIndex = 5;
@@ -240,7 +242,7 @@
             this.btnModule5.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule5.Location = new System.Drawing.Point(0, 150);
+            this.btnModule5.Location = new System.Drawing.Point(0, 200);
             this.btnModule5.Name = "btnModule5";
             this.btnModule5.Size = new System.Drawing.Size(200, 50);
             this.btnModule5.TabIndex = 4;
@@ -252,7 +254,7 @@
             this.btnModule4.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule4.Location = new System.Drawing.Point(0, 100);
+            this.btnModule4.Location = new System.Drawing.Point(0, 150);
             this.btnModule4.Name = "btnModule4";
             this.btnModule4.Size = new System.Drawing.Size(200, 50);
             this.btnModule4.TabIndex = 3;
@@ -264,7 +266,7 @@
             this.btnModule3.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule3.Location = new System.Drawing.Point(0, 50);
+            this.btnModule3.Location = new System.Drawing.Point(0, 100);
             this.btnModule3.Name = "btnModule3";
             this.btnModule3.Size = new System.Drawing.Size(200, 50);
             this.btnModule3.TabIndex = 2;
@@ -276,7 +278,7 @@
             this.btnModule2.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnModule2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModule2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnModule2.Location = new System.Drawing.Point(0, 0);
+            this.btnModule2.Location = new System.Drawing.Point(0, 50);
             this.btnModule2.Name = "btnModule2";
             this.btnModule2.Size = new System.Drawing.Size(200, 50);
             this.btnModule2.TabIndex = 1;
@@ -291,6 +293,19 @@
             this.mainContentPanel.Name = "mainContentPanel";
             this.mainContentPanel.Size = new System.Drawing.Size(891, 573);
             this.mainContentPanel.TabIndex = 3;
+            // 
+            // btnModule1
+            // 
+            this.btnModule1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnModule1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModule1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnModule1.Location = new System.Drawing.Point(0, 0);
+            this.btnModule1.Name = "btnModule1";
+            this.btnModule1.Size = new System.Drawing.Size(200, 50);
+            this.btnModule1.TabIndex = 0;
+            this.btnModule1.Text = "教學示範區";
+            this.btnModule1.UseVisualStyleBackColor = true;
+            this.btnModule1.Click += new System.EventHandler(this.btnModule1_Click_1);
             // 
             // Form1
             // 
@@ -336,6 +351,7 @@
         private System.Windows.Forms.ComboBox cboLanguages;
         private System.Windows.Forms.Button btnModule9;
         private System.Windows.Forms.Button btnModule10;
+        private System.Windows.Forms.Button btnModule1;
     }
 }
 
